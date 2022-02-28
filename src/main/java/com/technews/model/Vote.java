@@ -51,7 +51,9 @@ public class Vote implements Serializable {
         if (this == o) return true;
         if (!(o instanceof Vote)) return false;
         Vote vote = (Vote) o;
-        return id.equals(vote.id) && userId.equals(vote.userId) && postId.equals(vote.postId);
+        return id.equals(vote.id) &&
+                userId.equals(vote.userId) &&
+                postId.equals(vote.postId);
     }
 
     @Override

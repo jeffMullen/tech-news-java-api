@@ -127,7 +127,14 @@ public class Post implements Serializable {
         if (this == o) return true;
         if (!(o instanceof Post)) return false;
         Post post = (Post) o;
-        return voteCount == post.voteCount && id.equals(post.id) && title.equals(post.title) && postURL.equals(post.postURL) && userName.equals(post.userName) && userId.equals(post.userId) && postedAt.equals(post.postedAt) && updatedAt.equals(post.updatedAt) && comments.equals(post.comments);
+        return voteCount == post.voteCount && id.equals(post.id) &&
+                title.equals(post.title) &&
+                postURL.equals(post.postURL) &&
+                userName.equals(post.userName) &&
+                userId.equals(post.userId) &&
+                postedAt.equals(post.postedAt) &&
+                updatedAt.equals(post.updatedAt) &&
+                comments.equals(post.comments);
     }
 
     @Override
