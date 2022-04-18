@@ -22,7 +22,7 @@
     <form action="#" th:action="@{/posts/{id}(id=${post.id})}" th:object="${post}" method="post" class="edit-post-form">
         <div>
             <input type="text" th:field="*{title}"/>
-            <span th:text="${#strings.replace(post.postUrl,'http://','')}"></span>
+            <span th:text="${#strings.replace(post.postURL,'http://','')}"></span>
         </div>
         <div th:if="${post.voteCount == 1}" class="meta">
             [[${post.voteCount}]] point by [[${post.userName}]] on
